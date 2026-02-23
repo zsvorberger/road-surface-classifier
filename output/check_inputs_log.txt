@@ -1,0 +1,53 @@
+
+==================== Stage 0: CHECK INPUTS ====================
+
+[STEP 1] Loading road geometries...
+✅ Loaded 1,652,852 road segments from GeoJSON.
+
+==================== Stage 0: CHECK INPUTS ====================
+
+[STEP 1] Loading road geometries...
+
+==================== Stage 0: CHECK INPUTS ====================
+
+[STEP 1] Loading road geometries...
+✅ Loaded 1,652,852 road segments from GeoJSON.
+💾 Saved Parquet copy for faster future loads.
+✅ Road file structure verified.
+
+[STEP 2] Loading label CSVs...
+✅ Loaded 453,241 total labels (410 gold + 452831 silver).
+
+[STEP 3] Merging label IDs with road geometries...
+
+==================== Stage 0: CHECK INPUTS ====================
+
+[STEP 1] Loading road geometries...
+⚡ Loaded Parquet roads (1,652,852) in 101.3s.
+🔧 Roads: renamed 'osm_id' → 'id'
+✅ Road file structure verified.
+
+[STEP 2] Loading label CSVs...
+🔧 gold.csv: using 'osm_id' as id → renamed to 'id'
+🔧 silver.csv: using 'osm_id' as id → renamed to 'id'
+✅ Loaded 453,241 total labels (410 gold + 452831 silver).
+
+[STEP 3] Merging label IDs with road geometries...
+🔗 Merged 453,236 labeled geometries in 69.7s.
+
+[STEP 4] Checking CRS...
+✅ CRS is EPSG:4326 (good).
+
+[STEP 5] Saving cleaned outputs...
+💾 merged_labels.parquet
+💾 merged_labels.csv
+
+===== SUMMARY =====
+Roads loaded:   1,652,852
+Labels merged:  453,236
+Quality mix:    {'silver': 452831, 'gold': 405}
+Classes:        ['0', '1']
+Elapsed:        301.3s
+Log:            /Users/zach/Desktop/Strava Stat Tracker/ClassifierTest/output/check_inputs_log.txt
+==================== DONE ====================
+

@@ -1,0 +1,13 @@
+Clean labels build (SAFE whitelist + lightweight visualizer)
+- Input roads:  ClassifierTest/input/pa_roads_only2.geojson
+- Input labels: ClassifierTest/input/labels2.csv
+- Kept highways: ['motorway', 'primary', 'residential', 'secondary', 'tertiary', 'trunk']
+
+- Clean features: 452831
+- Unique clean IDs: 452831
+- Gravel IDs (labels file): 55023
+- Final labels rows: 452831
+- Gravel missing in clean (not included): 31559
+- Labels CSV: /Users/zach/Desktop/Strava Stat Tracker/ClassifierTest/output/labels_clean_20250918_0940.csv
+- Visualizer GPKG: /Users/zach/Desktop/Strava Stat Tracker/ClassifierTest/output/roads_labeled_visual_20250918_0940.gpkg (layer='roads_labeled_visual')
+- Per-highway kept counts: {'residential': 326122, 'tertiary': 38607, 'primary': 35036, 'secondary': 27145, 'trunk': 13010, 'motorway': 12911}
