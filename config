@@ -1,0 +1,6 @@
+Host naiptiledownloader
+    HostName 52.159.253.165
+    User azureuser
+    IdentityFile ~/Desktop/naiptiledownloader_key.pem
+
+
